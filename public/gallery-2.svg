@@ -1,0 +1,18 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#E1EDF7"/>
+    </linearGradient>
+    <linearGradient id="tooth" x1="600" y1="180" x2="600" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E9F2FA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg2)"/>
+  <ellipse cx="600" cy="650" rx="280" ry="70" fill="#0D5F73" fill-opacity="0.12"/>
+  <path d="M470 210C470 178 496 152 528 152H672C704 152 730 178 730 210V380C730 404 724 428 712 450L654 564C642 588 618 604 592 604H608C582 604 558 588 546 564L488 450C476 428 470 404 470 380V210Z" fill="url(#tooth)" stroke="#C9D9E8" stroke-width="8"/>
+  <path d="M545 332C560 346 584 355 609 355C634 355 657 346 672 332" stroke="#0D5F73" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="552" cy="289" r="11" fill="#0F1D3A"/>
+  <path d="M627 286C637 277 652 275 663 281" stroke="#0F1D3A" stroke-width="9" stroke-linecap="round"/>
+</svg>

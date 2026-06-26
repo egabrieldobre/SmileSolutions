@@ -1,0 +1,22 @@
+<svg width="1600" height="480" viewBox="0 0 1600 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bannerGrad" x1="0" y1="0" x2="1600" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#030408"/>
+      <stop offset="0.3" stop-color="#061120"/>
+      <stop offset="0.7" stop-color="#0a1a2f"/>
+      <stop offset="1" stop-color="#031d38"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0" y1="0" x2="600" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#15a8d3" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#76f2ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="480" fill="url(#bannerGrad)"/>
+  <rect width="1600" height="480" fill="url(#accent1)"/>
+  <path d="M0 320Q400 280 800 300T1600 320L1600 480H0Z" fill="#15a8d3" fill-opacity="0.08"/>
+  <circle cx="120" cy="80" r="180" fill="#45d6f6" fill-opacity="0.12"/>
+  <circle cx="1480" cy="400" r="220" fill="#15a8d3" fill-opacity="0.1"/>
+  <path d="M300 200L400 150L500 180L450 250Z" fill="#76f2ff" fill-opacity="0.14"/>
+  <line x1="0" y1="0" x2="1600" y2="480" stroke="#76f2ff" stroke-width="1" stroke-opacity="0.08"/>
+  <line x1="1600" y1="0" x2="0" y2="480" stroke="#45d6f6" stroke-width="1" stroke-opacity="0.08"/>
+</svg>
