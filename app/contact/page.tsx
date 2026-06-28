@@ -31,6 +31,12 @@ export default function ContactPage() {
                                 ☎️ <a href={phone.href}>{phone.label}</a>
                             </p>
                         ))}
+                        <p>
+                            📍{" "}
+                            <a href={contactInfo.mapLink} target="_blank" rel="noopener noreferrer">
+                                {contactInfo.address}
+                            </a>
+                        </p>
                     </article>
                     <article className="contact-card reveal delay-2">
                         <h3>Program de lucru</h3>
@@ -59,6 +65,16 @@ export default function ContactPage() {
                         href={contactInfo.phones[1].href}
                         label={contactInfo.phones[1].label}
                         variant="secondary"
+                    />
+                </div>
+
+                <div className="contact-map reveal delay-4">
+                    <iframe
+                        src={contactInfo.mapEmbed}
+                        title="Harta Smile Solutions Dental Lab"
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        allowFullScreen
                     />
                 </div>
             </section>

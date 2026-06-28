@@ -11,6 +11,11 @@ export const contactInfo = {
         { label: "0799 959 504", href: "tel:+40799959504" },
         { label: "0767 426 673", href: "tel:+40767426673" },
     ],
+    address: "Bulevardul Știrbei Vodă 7A, 200355 Craiova",
+    mapEmbed:
+        "https://www.google.com/maps?q=Bulevardul%20%C8%98tirbei%20Vod%C4%83%207A%2C%20200355%20Craiova&output=embed",
+    mapLink:
+        "https://www.google.com/maps/search/?api=1&query=Bulevardul%20%C8%98tirbei%20Vod%C4%83%207A%2C%20200355%20Craiova",
     social: {
         instagram: "https://www.instagram.com/smile_solutions_dental_lab1/",
         facebook:
