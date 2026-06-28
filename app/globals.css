@@ -89,8 +89,7 @@ h3 {
   padding: 4.5rem 0 4.5rem;
   background:
     linear-gradient(140deg, rgba(2, 4, 8, 0.88), rgba(2, 6, 14, 0.86)),
-    radial-gradient(circle at 80% 15%, rgba(21, 168, 211, 0.24), transparent 34%),
-    url("/gallery-2.svg") center/cover no-repeat;
+    radial-gradient(circle at 80% 15%, rgba(21, 168, 211, 0.24), transparent 34%);
   border-bottom: 1px solid rgba(138, 174, 214, 0.18);
 }
 
