@@ -1,7 +1,6 @@
 export const navLinks = [
     { href: "/", label: "Acasă" },
     { href: "/servicii", label: "Servicii" },
-    { href: "/implanturi", label: "Implanturi" },
     { href: "/echipa", label: "Echipa" },
     { href: "/galerie", label: "Galerie" },
 ];
