@@ -72,16 +72,78 @@ const testimonials = [
   },
 ];
 
+const galleryImages = [
+  {
+    src: "/images/471137685_1561151194587821_5683033931832569516_n.jpg",
+    alt: "Restaurare integral ceramica cu estetica naturala",
+  },
+  {
+    src: "/images/491131160_1459196105425614_2721853577358078643_n.jpg",
+    alt: "Lucrare protetica finalizata in laborator",
+  },
+  {
+    src: "/images/491198030_1459196152092276_2697793452484991043_n.jpg",
+    alt: "Detaliu de stratificare ceramica premium",
+  },
+  {
+    src: "/images/491693440_1459196158758942_6265099231209625541_n.jpg",
+    alt: "Proteza pe implant cu gingie ceramica",
+  },
+  {
+    src: "/images/492001995_1459196388758919_8548086132379571955_n.jpg",
+    alt: "Punte dentara cu textura naturala",
+  },
+  {
+    src: "/images/492146731_1459196482092243_2792958214412305853_n.jpg",
+    alt: "Coroane ceramice pe model de lucru",
+  },
+  {
+    src: "/images/499784758_1494333795245178_2570017264481952737_n.jpg",
+    alt: "Restaurare estetica frontala in detaliu",
+  },
+  {
+    src: "/images/583703018_17953747290041299_7008583533476384636_n.jpg",
+    alt: "Lucrare protetica fixa pe model",
+  },
+  {
+    src: "/images/636441189_17963425185041299_3551764494456705973_n.jpg",
+    alt: "Structura metalica pentru proteza pe implant",
+  },
+];
+
 export default function Home() {
   return (
     <div className="site-shell">
       <header className="hero" id="acasa">
         <div className="hero-overlay" aria-hidden />
         <nav className="top-nav reveal">
-          <p className="brand">Smile Solutions</p>
-          <a href="#contact" className="top-nav-link">
-            Contact rapid
+          <a className="brand" href="#acasa">
+            <Image src="/logo.svg" alt="Smile Solutions" width={88} height={88} priority />
+            <span>Smile Solutions</span>
           </a>
+          <div className="nav-actions">
+            <a
+              href="https://www.instagram.com/smile_solutions_dental_lab1/"
+              className="nav-social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.facebook.com/people/Smile-Solutions-Dental-Lab/100040057157012/?locale=ro_RO"
+              className="nav-social"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              Facebook
+            </a>
+            <a href="#contact" className="top-nav-link">
+              Contact rapid
+            </a>
+          </div>
         </nav>
 
         <div className="hero-content container">
@@ -279,13 +341,15 @@ export default function Home() {
           />
 
           <div className="gallery-grid">
-            {[
-              { src: "/gallery-1.svg", alt: "Modelare digitala CAD pentru reabilitare" },
-              { src: "/gallery-2.svg", alt: "Restaurare ceramica cu textura naturala" },
-              { src: "/gallery-3.svg", alt: "Lucrare pe implant realizata in laborator" },
-            ].map((item, index) => (
-              <figure className={`gallery-item reveal delay-${index + 1}`} key={item.src}>
-                <Image src={item.src} alt={item.alt} width={720} height={480} />
+            {galleryImages.map((item, index) => (
+              <figure className={`gallery-item reveal delay-${(index % 4) + 1}`} key={item.src}>
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  width={720}
+                  height={540}
+                  sizes="(max-width: 720px) 100vw, 33vw"
+                />
                 <figcaption>{item.alt}</figcaption>
               </figure>
             ))}
@@ -318,14 +382,14 @@ export default function Home() {
           <SectionTitle
             eyebrow="Contact"
             title="Hai sa discutam urmatorul tau caz"
-            description="Datele de mai jos sunt demonstrative si pot fi inlocuite rapid cu informatiile finale ale laboratorului."
+            description="Laborator tehnică dentară Smile Solutions. Contacteaza-ne telefonic sau pe retelele sociale pentru oferte si programari."
           />
 
           <div className="contact-grid">
             <article className="contact-card reveal delay-1">
-              <h3>Solicita o oferta</h3>
-              <p>Email: contact@smilesolutions.ro</p>
-              <p>Telefon: +40 700 000 000</p>
+              <h3>Laborator tehnică dentară</h3>
+              <p>☎️ <a href="tel:+40799959504">0799 959 504</a></p>
+              <p>☎️ <a href="tel:+40767426673">0767 426 673</a></p>
             </article>
             <article className="contact-card reveal delay-2">
               <h3>Program de lucru</h3>
@@ -333,15 +397,31 @@ export default function Home() {
               <p>Sambata: 09:00 - 13:00</p>
             </article>
             <article className="contact-card reveal delay-3">
-              <h3>Adresa laborator</h3>
-              <p>Str. Exemplu 10, Bucuresti</p>
-              <p>Romania</p>
+              <h3>Urmareste-ne</h3>
+              <p>
+                <a
+                  href="https://www.instagram.com/smile_solutions_dental_lab1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.facebook.com/people/Smile-Solutions-Dental-Lab/100040057157012/?locale=ro_RO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </a>
+              </p>
             </article>
           </div>
 
           <div className="contact-cta reveal delay-4">
-            <CtaButton href="mailto:contact@smilesolutions.ro" label="Contacteaza-ne" />
-            <CtaButton href="tel:+40700000000" label="Programeaza o consultatie" variant="secondary" />
+            <CtaButton href="tel:+40799959504" label="Suna acum" />
+            <CtaButton href="tel:+40767426673" label="0767 426 673" variant="secondary" />
           </div>
         </section>
       </main>

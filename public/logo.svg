@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Smile Solutions">
+  <defs>
+    <path id="topArc" d="M150,400 A250,250 0 0,1 650,400"></path>
+    <path id="bottomArc" d="M650,400 A250,250 0 0,1 150,400"></path>
+  </defs>
+
+  <!-- Outer Circle -->
+  <circle cx="400" cy="400" r="304" fill="#111"></circle>
+
+  <!-- White Ring -->
+  <circle cx="400" cy="400" r="250" fill="none" stroke="white" stroke-width="108"></circle>
+
+  <!-- Text -->
+  <text font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="800" fill="#111" letter-spacing="2">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">
+      SMILE SOLUTIONS
+    </textPath>
+  </text>
+
+  <text font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="800" fill="#111" letter-spacing="2">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">
+      SMILE SOLUTIONS
+    </textPath>
+  </text>
+
+  <!-- Side Dots -->
+  <circle cx="165" cy="400" r="10" fill="#111"></circle>
+  <circle cx="635" cy="400" r="10" fill="#111"></circle>
+
+  <!-- Inner Circle -->
+  <circle cx="400" cy="400" r="175" fill="#111"></circle>
+
+  <!-- Tooth -->
+  <path fill="#fff" d="M330 275
+           C300 275 285 295 288 330
+           L300 445
+           C305 490 325 520 355 520
+           C372 520 382 500 390 470
+           C398 500 408 520 425 520
+           C455 520 475 490 480 445
+           L492 330
+           C495 295 480 275 450 275
+           C425 275 410 285 390 285
+           C370 285 355 275 330 275Z"></path>
+
+  <!-- Eyes -->
+  <circle cx="355" cy="345" r="12" fill="#111"></circle>
+
+  <path d="M425 336
+           Q440 326 455 336" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round"></path>
+
+  <!-- Smile -->
+  <path d="M335 400
+           Q400 435 465 390" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round"></path>
+
+  <!-- Dimple -->
+  <path d="M438 385
+           Q450 395 445 408" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round"></path>
+</svg>
